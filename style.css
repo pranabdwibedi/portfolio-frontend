@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color : white;
+}
+
+
+
+/* Navigation bar styling */
+
+.navBar{
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.473));
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    padding: 20px;
+
+}
+.navBar ul{
+    max-width: 60%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.landingPage{
+    padding-top: 10vh;
+}
+.homeContainer{
+    display: flex;
+}
+nav h1{
+    font-size: 2.5rem;
+}
+
+nav a{
+    font-size: medium;
+    text-decoration: none;
+    font-size: large;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.navLink:hover{
+    text-decoration: underline;
+}
+.currentPageNavLink{
+    background-color: #34537a;
+}
+
+
+
+
+/* Main tag styling */
+
+main{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cards{
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+
+
+
+/* Home page styling */
+
+#landingBoxLeft{
+    width: 35%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profilePhoto{
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    box-shadow: 0px 0px 15px #4169a8;
+}
+#landingBoxRight{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+#bio{
+    font-size: larger;
+    line-height: 40px;
+    text-align: justify;
+}
+#socialLinks{
+    display: flex;
+    gap: 20px;
+}
+#linkedinLogo{
+    height: 40px;
+}
+#githubLogo{
+    height: 45px;
+}
+.button{
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    height: max-content;
+}
+.button:hover{
+    background-color: rgb(65, 65, 243);
+}
+#linkedinLogo:hover, #githubLogo:hover{
+    box-shadow: 0px 0px 10px rgb(110, 110, 207);
+}
+
+
+
+/* Education page styling */
+
+.educationTableBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educationTableBox table{
+    width: 80%;
+    font-size: large;
+    text-align: center;    
+}
+.educationTableBox table tr th{
+    font-size: x-large;
+}
+.educationTableBox table tr td{
+    padding: 40px 10px;
+}
+#aboutAcademics{
+    padding: 50px;
+}
+#aboutAcademics h1{
+    text-decoration: underline;
+}
+.instituteNameHeading{
+    font-weight: 700;
+    font-size: larger;
+    line-height: 50px;
+    margin-top: 50px;
+}
+.aboutParagraph{
+    line-height: 30px;
+    font-size: large;
+    text-align: justify;
+}
+
+
+
+/* Skill page styling */
+
+.skill-heading{
+    margin-top: 5vh;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+#frontend-skills-container, #backend-skills-container, #others-skills-container{
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    gap: 5%;
+    padding-top: 5vh;
+    
+}
+.skill-card{
+    display: flex;
+    background-color: #01183d;
+    border: 1px solid white;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 10px;
+    min-height: 200px;
+}
+.skill-card-image{
+    max-width: 30%;
+    margin: auto;
+}
+.skill-card-content p{
+    font-size: large;
+    line-height: 30px;
+    text-align: justify;
+}
+.skill-card-content h3{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Experience page styling */
+
+.experiencePage{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10vh;
+}
+#internships-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#internships-container p, #internships-container figcaption{
+    line-height: 30px;
+    font-size: large;
+    text-align: justify;
+}
+#internship-heading{
+    text-decoration: underline;
+}
+.internship-heading-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.internship-heading-img img{
+    height: 100px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.internship-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.internshipPhotos{
+    height: 80vh;
+    max-height: 1000px;
+    
+}
+
+
+
+
+/* Projects page styling */
+.projectsPage{
+    padding-left : 50px;
+    padding-right: 50px;
+    padding-bottom: 20vh;
+    
+}
+.projectsPage h1{
+    text-decoration: underline;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+#projects{
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    column-gap: 2%;
+    row-gap: 10%;
+}
+.project-card{
+    padding: 10% 5%;
+    background-color: #01183d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.project-card:hover{
+    box-shadow: 0px 0px 50px rgb(17, 17, 37);
+}
+.project-card img{
+    height: 100px;
+    width: 100px;
+    align-self: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.content h3{
+    align-self: center;
+}
+.content p{
+    text-align: justify;
+    line-height: 30px;
+    font-size: large;
+}
+
+
+
+
+
+/* Contact me page styling */
+
+.contactMePage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+#emailForm{
+    display: flex;
+    flex-direction: column;
+    background-color: #01183d;
+    padding: 2em;
+    border: 1px solid white;
+    border-radius: 10px;
+    min-height: 50vh;
+    justify-content: space-around;
+    box-shadow: 0px 0px 20px white;
+}
+#emailForm button{
+    background-color: #01183d;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    align-self: center;
+}
+#emailForm div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#emailForm input{
+    min-height: 35px;
+    background-color: rgb(14, 15, 43);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: large;
+}
+#emailForm textarea{
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: rgb(14, 15, 43);
+}
+
+
+
+/* Footer styling */
+
+.footerBox{
+    background-color: #34537a;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-nav-Container{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+
+
