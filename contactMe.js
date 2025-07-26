@@ -6,7 +6,7 @@ form.addEventListener("submit", (event)=>{
         email : document.getElementById("emailInput").value,
         message : document.getElementById("msg").value
     }
-  fetch('http://localhost:8080/interestedPerson', {
+  fetch('https://portfolio-backend-production-6426.up.railway.app/interestedPerson', {
     method: 'POST',
     body: JSON.stringify(data),
     headers : {

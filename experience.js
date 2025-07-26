@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async () => {
     document.getElementById("experienceNavLink").setAttribute("class", "currentPageNavLink")
     let internships = document.getElementById("internships-container")
-    const experienceResponse = await fetch('http://localhost:8080/internships')
+    const experienceResponse = await fetch('https://portfolio-backend-production-6426.up.railway.app/internships')
         .then(response =>response.json())
         .then(data=>
             data.forEach(item => {
