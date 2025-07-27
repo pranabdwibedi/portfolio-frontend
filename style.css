@@ -9,52 +9,20 @@
 
 
 /* Navigation bar styling */
-
-.navBar{
-    width: 100vw;
+.navbar-toggler{
+    filter: invert();
+}
+.navbar{
     backdrop-filter: blur(10px);
-    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.473));
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    height: 10vh;
-    align-items: center;
-    padding: 20px;
+    background: linear-gradient(to top, #21354dc7, #28416493);
+}
 
-}
-.navBar ul{
-    max-width: 60%;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-}
 .landingPage{
     padding-top: 10vh;
 }
-.homeContainer{
-    display: flex;
-}
-nav h1{
-    font-size: 2.5rem;
-}
 
-nav a{
-    font-size: medium;
-    text-decoration: none;
-    font-size: large;
-    padding: 10px 10px;
-    border-radius: 10px;
-}
-.navLink:hover{
-    text-decoration: underline;
-}
-.currentPageNavLink{
-    background-color: #34537a;
-}
+
+
 
 
 
@@ -76,6 +44,9 @@ main{
 
 /* Home page styling */
 
+.homeContainer{
+    display: flex;
+}
 #landingBoxLeft{
     width: 35%;
     min-height: 100%;
@@ -331,7 +302,6 @@ main{
     border-radius: 10px;
     min-height: 50vh;
     justify-content: space-around;
-    box-shadow: 0px 0px 20px white;
 }
 #emailForm button{
     background-color: #01183d;
@@ -377,4 +347,69 @@ main{
     justify-content: space-around;
 }
 
+@media (min-width : 2000px) {
+    #landingBoxLeft{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #landingBoxRight{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+    }
+}
 
+/* Tablets  */
+@media (max-width : 1200px) {
+
+    nav h1{
+        font-size: 2rem;
+    }
+    .cards{
+        max-width: 100vw;
+        min-height: max-content;
+    }
+    .homeContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #landingBoxLeft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        padding: 20px;
+    }
+    #landingBoxRight{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+}
+
+/* Mobile devices */
+@media (max-width : 500px) {
+    /* Navbar */
+    nav h1{
+        font-size: 1.1rem;
+    }
+    /* Home page */
+    #profilePhoto{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 15px #4169a8;
+    }
+}

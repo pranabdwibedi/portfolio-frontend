@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', async () => {
-    document.getElementById("projectNavLink").setAttribute("class", "currentPageNavLink")
     let projectContainer = document.getElementById("projects")
     const projectsResponse = await fetch('https://portfolio-backend-production-6426.up.railway.app/projects')
         .then(response =>response.json())

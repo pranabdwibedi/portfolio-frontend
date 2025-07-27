@@ -6,20 +6,56 @@
     <title>Contact me</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./Assets/Images/favicon.png" type="image/png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
 </head>
 <body>
     <header>
-        <nav class="navBar">
-            <a href="./index.html"><h1 id="nav-heading"></h1></a>
-            <ul type="none">
-                <a href="./index.html" class="navLink">Home</a>
-                <a href="./education.html" class="navLink">Education</a>
-                <a href="./skill.html" class="navLink">Skills</a>
-                <a href="./experience.html" class="navLink">Experience</a>
-                <a href="./projects.html" class="navLink">Projects</a>
-                <a href="#" id="contactMeNavLink" class="navLink">Contact me</a>
+      <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold fs-3" href="#" id="nav-heading"
+            >Pranab Kumar Dwibedi</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto d-flex gap-4">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./skill.html">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./experience.html">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">Contact</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
         <section class="cards landingPage contactMePage">
@@ -53,5 +89,10 @@
     </footer>
     <script src="./headerFooter.js"></script>
     <script src="./contactMe.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
