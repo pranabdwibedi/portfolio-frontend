@@ -422,4 +422,11 @@ main{
     #aboutAcademics{
         padding: 10px;
     }
+    .instituteNameHeading{
+        font-weight: 700;
+        font-size: larger;
+        line-height: 30px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
 }
