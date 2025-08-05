@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', async () => {
                 td3.innerText = item.mark+"%"
                 row.appendChild(td3)
                 let td4 = document.createElement("td")
-                let button = document.createElement("a")
-                button.setAttribute("href", item.certificateLink)
-                button.innerText = "view"
-                button.setAttribute("class", "button")
-                td4.appendChild(button)
+                let btn = document.createElement("a")
+                btn.setAttribute("href", item.certificateLink)
+                btn.innerText = "view"
+                btn.setAttribute("class", "button")
+                td4.appendChild(btn)
                 row.appendChild(td4)
                 document.getElementById("eduacationTable").appendChild(row)
 
