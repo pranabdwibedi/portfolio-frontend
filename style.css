@@ -401,7 +401,9 @@ main{
         align-items: center;
         padding: 20px;
     }
-
+    #aboutAcademics{
+        padding: 30px;
+    }
 }
 
 /* Mobile devices */
@@ -416,5 +418,8 @@ main{
         height: 200px;
         width: 200px;
         box-shadow: 0px 0px 15px #4169a8;
+    }
+    #aboutAcademics{
+        padding: 10px;
     }
 }
