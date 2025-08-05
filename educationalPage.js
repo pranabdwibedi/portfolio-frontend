@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 td2.innerText = item.instituteName
                 row.appendChild(td2)
                 let td3 = document.createElement("td")
-                td3.innerText = item.mark
+                td3.innerText = item.mark+"%"
                 row.appendChild(td3)
                 let td4 = document.createElement("td")
                 let button = document.createElement("a")
