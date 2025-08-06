@@ -54,12 +54,14 @@ document.addEventListener('DOMContentLoaded', async () => {
                     certificate.setAttribute("target","_blank")
                     certificate.innerText = "Certificate"
                     certificate.setAttribute("class", "button")
+                    certificate.setAttribute("rel", "noopener noreferrer")
                     internshipBtns.appendChild(certificate)
                 }
                 if(item.projectReportUrl != null){
                     report.setAttribute("href", item.projectReportUrl)
                     report.setAttribute("target", "_blank")
                     report.setAttribute("class", "button")
+                    report.setAttribute("rel", "noopener noreferrer")
                     report.innerText = "Project Report"
                     internshipBtns.appendChild(report)
                 }
