@@ -246,7 +246,7 @@ main{
 .projectsPage{
     padding-left : 50px;
     padding-right: 50px;
-    margin-top: 50px;    
+    padding-bottom: 50px;
 }
 .projectsPage h1{
     text-decoration: underline;
@@ -257,7 +257,7 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2%;
-    row-gap: 10%;
+    row-gap: 50px;
 }
 .project-card{
     padding: 5%;
@@ -267,9 +267,9 @@ main{
     flex-direction: column;
     gap: 10px;
 }
-.project-card:hover{
+/* .project-card:hover{
     box-shadow: 0px 0px 50px rgb(17, 17, 37);
-}
+} */
 .project-card img{
     height: 100px;
     width: 100px;
