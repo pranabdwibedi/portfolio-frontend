@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let td4 = document.createElement("td")
                 let btn = document.createElement("a")
                 btn.setAttribute("href", item.certificateLink)
+                btn.setAttribute("target", "_blank")
                 btn.innerText = "view"
                 btn.setAttribute("class", "button")
                 td4.appendChild(btn)
